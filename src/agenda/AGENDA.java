@@ -18,19 +18,17 @@ public class AGENDA {
                 peticions.mkdirs(); //Es crea
                 System.out.println("El fichero no existía pero se ha creado con exito!");
             }
-            String[] bar; //Creem l'array per guaradar els strings
-            bar = linia.split("(?=\\s)"); //Separem cada paraula amb salts de linia cada cop que trobi un espai
-            for(String liniabar : bar){
+            String[] peticio; //Creem l'array per guaradar els strings
+            peticio = linia.split("(?=\\s)"); //Separem cada paraula amb salts de linia cada cop que trobi un espai
+            for(String liniabar : peticio){
                 System.out.println(String.format(liniabar));
                 Array.add(String.format(liniabar));
-                
-                
             }
             int i = 1;
 
-            while(i < 24){
-                
-                writeReg2.write(Array.get(i += 7));
+            while(i < 30){
+                writeReg2.write(Array.get(i + 1));
+                //Peticiones c1 = Peticiones("Maria Lapera", "666554433", "Mujer", 33, 6, "Postres");
             }
             writeReg2.close();
             }
